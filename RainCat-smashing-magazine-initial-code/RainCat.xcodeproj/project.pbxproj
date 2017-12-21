@@ -13,6 +13,10 @@
 		BBA2E4B11D74A62C00853E63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBA2E4AF1D74A62C00853E63 /* Main.storyboard */; };
 		BBA2E4B31D74A62C00853E63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBA2E4B21D74A62C00853E63 /* Assets.xcassets */; };
 		BBA2E4B61D74A62C00853E63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBA2E4B41D74A62C00853E63 /* LaunchScreen.storyboard */; };
+		CE42E95A1FEBC9BD006C2D28 /* BackgroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42E9591FEBC9BD006C2D28 /* BackgroundNode.swift */; };
+		CE42E95C1FEBCBAD006C2D28 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42E95B1FEBCBAD006C2D28 /* Constants.swift */; };
+		CE42E95E1FEBCC9E006C2D28 /* UmbrellaSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42E95D1FEBCC9E006C2D28 /* UmbrellaSprite.swift */; };
+		CE42E9601FEBCF2E006C2D28 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42E95F1FEBCF2E006C2D28 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		BBA2E4B21D74A62C00853E63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBA2E4B51D74A62C00853E63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBA2E4B71D74A62C00853E63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE42E9591FEBC9BD006C2D28 /* BackgroundNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BackgroundNode.swift; path = Scenes/BackgroundNode.swift; sourceTree = "<group>"; };
+		CE42E95B1FEBCBAD006C2D28 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CE42E95D1FEBCC9E006C2D28 /* UmbrellaSprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UmbrellaSprite.swift; sourceTree = "<group>"; };
+		CE42E95F1FEBCF2E006C2D28 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				BBA2E4AB1D74A62C00853E63 /* GameScene.swift */,
+				CE42E9591FEBC9BD006C2D28 /* BackgroundNode.swift */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -49,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				BBA2E4AD1D74A62C00853E63 /* GameViewController.swift */,
+				CE42E95F1FEBCF2E006C2D28 /* DetailViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -60,6 +70,7 @@
 				BBA2E4B21D74A62C00853E63 /* Assets.xcassets */,
 				BBA2E4B41D74A62C00853E63 /* LaunchScreen.storyboard */,
 				BBA2E4B71D74A62C00853E63 /* Info.plist */,
+				CE42E95B1FEBCBAD006C2D28 /* Constants.swift */,
 			);
 			name = Support;
 			sourceTree = "<group>";
@@ -95,6 +106,7 @@
 		BBE2D58D1D9AB93B0046B493 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				CE42E95D1FEBCC9E006C2D28 /* UmbrellaSprite.swift */,
 			);
 			name = Sprites;
 			sourceTree = "<group>";
@@ -131,7 +143,7 @@
 				TargetAttributes = {
 					BBA2E4A11D74A62C00853E63 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = SYZ2B4B9CC;
+						DevelopmentTeam = Y6HAL6UA2V;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -172,9 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE42E95E1FEBCC9E006C2D28 /* UmbrellaSprite.swift in Sources */,
+				CE42E95C1FEBCBAD006C2D28 /* Constants.swift in Sources */,
 				BBA2E4AC1D74A62C00853E63 /* GameScene.swift in Sources */,
+				CE42E95A1FEBC9BD006C2D28 /* BackgroundNode.swift in Sources */,
 				BBA2E4AE1D74A62C00853E63 /* GameViewController.swift in Sources */,
 				BBA2E4A61D74A62C00853E63 /* AppDelegate.swift in Sources */,
+				CE42E9601FEBCF2E006C2D28 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,11 +313,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SYZ2B4B9CC;
+				DEVELOPMENT_TEAM = Y6HAL6UA2V;
 				INFOPLIST_FILE = RainCat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.thirteen23.RainCat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tal.RainCat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -312,11 +328,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SYZ2B4B9CC;
+				DEVELOPMENT_TEAM = Y6HAL6UA2V;
 				INFOPLIST_FILE = RainCat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.thirteen23.RainCat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tal.RainCat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 2;

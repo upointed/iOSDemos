@@ -8,7 +8,16 @@
 
 import UIKit
 import SpriteKit
-import GameplayKit
+//import GameplayKit
+
+extension GameViewController: GameSceneDelegate {
+    func moveEnd() {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detail") as! DetailViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+}
+
 
 class GameViewController: UIViewController {
 
@@ -16,15 +25,17 @@ class GameViewController: UIViewController {
     super.viewDidLoad()
 
     let sceneNode = GameScene(size: view.frame.size)
+    sceneNode.interactionDelegate = self;
 
     if let view = self.view as! SKView? {
-      view.presentScene(sceneNode)
-      view.ignoresSiblingOrder = true
-      view.showsPhysics = true
-      view.showsFPS = true
-      view.showsNodeCount = true
+          view.presentScene(sceneNode)
+          view.ignoresSiblingOrder = true
+          view.showsPhysics = true
+          view.showsFPS = true
+          view.showsNodeCount = true
     }
   }
+    
 
   override var shouldAutorotate: Bool {
     return true
