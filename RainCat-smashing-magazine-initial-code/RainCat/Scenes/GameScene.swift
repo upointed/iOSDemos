@@ -7,6 +7,7 @@
 //
 
 import SpriteKit
+import SceneKit
 
 protocol GameSceneDelegate {
     func moveEnd();
