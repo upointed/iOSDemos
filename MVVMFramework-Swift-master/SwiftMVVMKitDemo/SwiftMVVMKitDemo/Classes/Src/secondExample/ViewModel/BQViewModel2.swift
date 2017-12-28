@@ -12,7 +12,7 @@ import MJExtension
 
 class BQViewModel2: NSObject, SMKViewModelProtocolDelegate {
 
-    func smk_viewModelWithGetDataSuccessHandler(successHandler: ((array: [AnyObject]) -> ())?) {
+    func smk_viewModelWithGetDataSuccessHandler(successHandler: ((_ _ array: [AnyObject]) -> ())?) {
         let url = "http://news-at.zhihu.com/api/4/news/latest"
         SMKHttp.get(url, params: nil, success: { (json: AnyObject!) -> Void in
             

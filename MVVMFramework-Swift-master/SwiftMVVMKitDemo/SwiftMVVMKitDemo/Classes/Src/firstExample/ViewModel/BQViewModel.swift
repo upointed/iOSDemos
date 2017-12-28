@@ -11,7 +11,7 @@ import SUIMVVMNetwork
 
 class BQViewModel: NSObject, SMKViewModelProtocolDelegate {
 
-    func smk_viewModelWithGetDataSuccessHandler(successHandler: ((array: [AnyObject]) -> ())?) {
+    func smk_viewModelWithGetDataSuccessHandler(successHandler: ((_ array: [AnyObject]) -> ())?) {
         let url = "http://news-at.zhihu.com/api/4/news/latest"
         SMKHttp.get(url, params: nil, success: { (json: AnyObject!) -> Void in
             let array = json["stories"]

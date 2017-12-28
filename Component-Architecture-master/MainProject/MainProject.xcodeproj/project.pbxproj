@@ -137,7 +137,7 @@
 				TargetAttributes = {
 					791CFF391DFBCB1E00121A62 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = Y6HAL6UA2V;
+						DevelopmentTeam = 472P9J8R6U;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -347,7 +347,7 @@
 			baseConfigurationReference = 613005C30E65D78646D7EB54 /* Pods-MainProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Y6HAL6UA2V;
+				DEVELOPMENT_TEAM = 472P9J8R6U;
 				INFOPLIST_FILE = MainProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liuxiaozhuang.MainProject.tal;
@@ -361,7 +361,7 @@
 			baseConfigurationReference = 949C4EEBD172323874701483 /* Pods-MainProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Y6HAL6UA2V;
+				DEVELOPMENT_TEAM = 472P9J8R6U;
 				INFOPLIST_FILE = MainProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liuxiaozhuang.MainProject.tal;
