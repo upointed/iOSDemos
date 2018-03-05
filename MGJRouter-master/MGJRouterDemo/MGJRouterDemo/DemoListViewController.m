@@ -17,8 +17,9 @@ static NSMutableArray *titles;
 
 @implementation DemoListViewController
 
-+ (void)registerWithTitle:(NSString *)title handler:(UIViewController *(^)())handler
++ (void)registerWithTitle:(NSString *)title handler:(ViewControllerHandler)handler
 {
+    UIViewController* vc = handler();
     if (!titleWithHandlers) {
         titleWithHandlers = [[NSMutableDictionary alloc] init];
         titles = [NSMutableArray array];

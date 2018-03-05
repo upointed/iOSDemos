@@ -1,4 +1,4 @@
-
+    
 import Foundation
 
 func addOne(num: Int) -> Int {
@@ -14,6 +14,8 @@ func addTo(_ adder: Int) -> (Int) -> Int {
 
 let addTwo = addTo(2)    // addToFour: Int -> Int
 let result = addTwo(6)   // result = 8
+    
+let res = addTo(2)(6)
 
 func greaterThan(_ comparer: Int) -> (Int) -> Bool {
     return { $0 > comparer }
@@ -49,6 +51,12 @@ enum ControlEvent {
 class Control {
     var actions = [ControlEvent: TargetAction]()
     
+    convenience init<T: AnyObject>(_ target: T, action: @escaping (T) -> () -> (Void), controlEvent: ControlEvent) {
+        self.init()
+        actions[controlEvent] = TargetActionWrapper(
+            target: target, action: action)
+    }
+    
     func setTarget<T: AnyObject>(target: T,
         action: @escaping (T) -> () -> (), controlEvent: ControlEvent) {
             
@@ -64,3 +72,5 @@ class Control {
         actions[controlEvent]?.performAction()
     }
 }
+
+

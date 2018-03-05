@@ -18,7 +18,6 @@ class Child {
 }
 
 let xiaoming = Child()
-
 let toyName = xiaoming.pet?.toy?.name
 
 if let toyName = xiaoming.pet?.toy?.name {
@@ -30,6 +29,9 @@ extension Toy {
         //...
     }
 }
+
+//let lll: ()->() = {  print() }
+
 
 xiaoming.pet?.toy?.play()
 
